@@ -2,25 +2,25 @@ import React, { useState } from "react";
 
 const TeamForm = props => {
   console.log(props);
-  const [team, setTeam] = useState({
-    name: "",
-    email: "",
-    role: ""
-  });
-  const handleChanges = event => {
-    setTeam({ ...team, [event.target.name]: event.target.value });
+  const [team, setTeam] = useState({ name: "", email: "", role: ""});
+
+  const handleChanges = e => {
+    setTeam({ ...team, [e.target.name]: e.target.value });
     console.log(team);
   };
-  const submitForm = event => {
-    event.preventDefault();
+
+  const submitForm = e => {
+    e.preventDefault();
     props.addNewTeam(team);
     setTeam({ name: "", email: "", role: "" });
-    console.log(event.target.value);
+    console.log(e.target.value);
   };
 
   return (
     <form className='form-section' onSubmit={submitForm}>
-      <label htmlFor="name">Full Name</label>
+
+    <div className='fullname-input'>
+      <label id='label1' htmlFor="name">Full Name</label>
       <input
         id="name"
         type="text"
@@ -28,7 +28,10 @@ const TeamForm = props => {
         onChange={handleChanges}
         value={team.name}
       />
-      <label htmlFor="note">Email</label>
+      </div>
+
+      <div className='email-input'>
+      <label id='label2' htmlFor="note">Email</label>
       <input
         id="email"
         type="text"
@@ -36,7 +39,10 @@ const TeamForm = props => {
         onChange={handleChanges}
         value={team.email}
       />
-      <label htmlFor="note">Role</label>
+      </div>
+      
+      <div className='role-input'>
+      <label id='label3' htmlFor="note">Role</label>
       <input
         id="role"
         type="text"
@@ -44,7 +50,10 @@ const TeamForm = props => {
         onChange={handleChanges}
         value={team.role}
       />
+      </div>
+
       <button type="submit">Add Member</button>
+
     </form>
   );
 };

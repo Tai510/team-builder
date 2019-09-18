@@ -4,8 +4,10 @@
 }
 
 .App h1 {
-  text-shadow: 1px 1px white;
   font-size: 50px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-family: 'Mansalva', cursive;
 }
 
 body {
@@ -43,44 +45,47 @@ body {
 }
 
 .form-section {
- display: flex;
- flex-direction: column;
- margin: 10px 600px;
+  margin: 80px 398px;
+  border: 5px solid white;
+  height: 345px;
+  padding-top: 50px;
+  border-radius: 5px;
 }
 
 .form-section input {
   height: 40px;
-  border-radius: 5px;
-  border: 1px solid red;
+  border-bottom: 2px solid white !important;
   margin-top: 10px;
   margin-bottom: 18px;
+  background-color: #83C1F3;
+  outline: none;
+  font-size: 30px;
+  font-family: 'Patrick Hand', cursive;
+  color: white;
+  border: 1px solid #83C1F3;
+  text-shadow: 1px 1px black;
 }
 
 .form-section button {
-  height: 40px;
-  width: 120px;
+  height: 56px;
+  width: 165px;
   border-radius: 5px;
   margin-top: 20px;
-  background-color: #F3D783;
+  background-color: #4081A1;
   border: 1px solid white;
-  margin-left: 67px;
-  font-family: 'Mansalva', cursive;
-  font-size: 15px;
-  text-shadow: 1px 1px white;
+  margin-left: 20px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 25px;
+  text-shadow: 1px 1px black;
+  color: white;
+  cursor: pointer;
 }
 
 .form-section label {
-  text-shadow: 1px 1px white;
-  font-size: 20px;
-}
-
-.new-members {
-  background-color: #F0F93B;
-  margin: 10px 530px;
-  height: 200px;
-  width: 400px;
-  padding-top: 1px;
-  border-radius: 5px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 30px;
+  font-weight: bolder;
 }
 
 .new-members span {
@@ -90,8 +95,80 @@ body {
 
 .team h2 {
   font-size: 30px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-weight: bolder;
 }
 
 .team p {
   font-size: 22px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-weight: bolder;
+}
+
+.team i {
+  margin-left: 360px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #AC95C1;
+  text-shadow: 1px 1px white;
+  font-weight: bolder;
+}
+
+.team {
+  background: #E7B3DF;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 16px 521px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+  height: 265px;
+}
+
+.team button {
+  height: 40px;
+  width: 125px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #B3E7C0;
+  border: 3px solid white;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 25px;
+  text-shadow: 1px 1px black;
+  color: white;
+  cursor: pointer;
+}
+
+.fullname-input {
+  display: flex;
+  margin-left: 125px;
+}
+
+.email-input {
+  display: flex;
+  margin-left: 125px;
+}
+
+.role-input {
+  display: flex;
+  margin-left: 125px;
+}
+
+#label1 {
+  margin-right: 20px;
+  margin-top: 13px;
+}
+
+#label2 {
+  margin-right: 63px;
+  margin-top: 15px;
+}
+
+#label3 {
+  margin-right: 75px;
+  margin-top: 14px;
 }

@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState , useEffect} from 'react';
 import './App.css';
 import TeamForm from '../src/Component/TeamForm'
 import TeamList from '../src/Component/TeamList'
@@ -23,9 +23,10 @@ function App() {
     };
     setTeam([...team, newTeam]);
   };
+
   return (
     <div className="App">
-      <h1>The Squad</h1>
+      <h1>The Squad <i class="fas fa-users"></i></h1>
       <TeamForm addNewTeam={addNewTeam} />
       <TeamList team={team} />
     </div>
